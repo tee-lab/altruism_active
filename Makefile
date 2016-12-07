@@ -11,7 +11,7 @@ CUFILES  :=  kernels.cu
 # ------------------------------------------------------------------------------
 
 # paths
-CUDA_INSTALL_PATH ?= /usr/local/cuda-5.0
+CUDA_INSTALL_PATH ?= /usr/local/cuda#-5.0
 
 # compilers
 NVCC := nvcc -g --ptxas-options=-v,-abi=no
@@ -32,7 +32,7 @@ LINKFLAGS += $(COMMONFLAGS)
 
 # libs
 #LIBS = -lcudart 					# cuda libs 		-lcutil_x86_64 -lshrutil_x86_64
-GLLIBS = -lglut -lGLU  				# openGL libs       -lGL -lGLEW  #-lX11 -lXi -lXmu 		
+GLLIBS = -lglut -lGLU -lGL 				# openGL libs       -lGL -lGLEW  #-lX11 -lXi -lXmu 		
 LIBS = 	 -lcudart -lcurand -lgsl -lgslcblas -ljpeg	# additional libs
 
 # files

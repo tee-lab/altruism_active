@@ -23,6 +23,7 @@
 #include "utils/cuda_vector_math.cuh"
 #include "utils/cuda_device.h"
 #include <thrust/scan.h>
+#include <thrust/device_ptr.h>
 
 #include "utils/simple_io.h"
 

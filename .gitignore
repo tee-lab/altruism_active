@@ -1,5 +1,7 @@
 *.o
+*.cu_o
 outtxt/*
 *.txt
 .Rhistory
 *~
+
